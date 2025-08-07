@@ -2,6 +2,7 @@ import { HeroSection } from "@/components/HeroSection";
 import { PlanCard } from "@/components/PlanCard";
 import { SocialIcons } from "@/components/SocialIcons";
 import { MovistarPlanCard } from "@/components/MovistarPlanCard";
+import { BaitPlanCard } from "@/components/BaitPlanCard";
 
 const Index = () => {
   return (
@@ -13,54 +14,46 @@ const Index = () => {
       <section id="promociones" className="py-16">
         {/* Bait Section */}
         <div className="bg-bait py-16 px-4">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-7xl mx-auto">
+            {/* Title */}
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-bait-foreground mb-4">
-                🔥 Promociones Bait - Ahorra más con tu portabilidad
+              <h2 className="text-4xl md:text-5xl font-bold text-black">
+                Paquetes que te dan más
               </h2>
-              <p className="text-xl text-bait-foreground opacity-90">
-                Cada paquete incluye redes sociales activas y llamadas ilimitadas.
-              </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <PlanCard
-                title="📦 Paquete Bait 230"
-                description="Plan completo con todo incluido"
-                price="$230"
-                features={[
-                  "Llamadas y mensajes ilimitados",
-                  "Navegación activa",
-                  "Hotspot incluido"
-                ]}
-                variant="bait"
-                socialIcons={<SocialIcons variant="bait" size="sm" />}
+            {/* Plans Grid */}
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+              <BaitPlanCard
+                price="$50"
+                planName="Bait 50"
+                description="Disfruta 7 días con 3 GB"
+                duration="7 días"
+                dataAmount="3 GB"
               />
               
-              <PlanCard
-                title="📦 Paquete Bait 200"
-                description="Plan esencial con lo necesario"
+              <BaitPlanCard
+                price="$100"
+                planName="Portabilidad 100"
+                description="Disfruta 30 días con 9 GB"
+                duration="30 días"
+                dataAmount="9 GB"
+              />
+              
+              <BaitPlanCard
                 price="$200"
-                features={[
-                  "Internet y llamadas ilimitadas",
-                  "Redes sociales incluidas",
-                  "Navegación básica"
-                ]}
-                variant="bait"
-                socialIcons={<SocialIcons variant="bait" size="sm" />}
+                planName="Bait 200"
+                description="Disfruta 30 días con 15 GB"
+                duration="30 días"
+                dataAmount="15 GB"
               />
               
-              <PlanCard
-                title="📦 Paquete Bait 150"
-                description="Plan básico ideal para comenzar"
-                price="$150"
-                features={[
-                  "Llamadas ilimitadas",
-                  "Internet básico",
-                  "Redes sociales principales"
-                ]}
-                variant="bait"
-                socialIcons={<SocialIcons variant="bait" size="sm" />}
+              <BaitPlanCard
+                price="$230"
+                planName="Bait 230"
+                description="Internet Ilimitado"
+                duration="30 días"
+                dataAmount="Ilimitado"
               />
             </div>
           </div>
