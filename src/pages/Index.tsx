@@ -1,6 +1,7 @@
 import { HeroSection } from "@/components/HeroSection";
 import { PlanCard } from "@/components/PlanCard";
 import { SocialIcons } from "@/components/SocialIcons";
+import { MovistarPlanCard } from "@/components/MovistarPlanCard";
 
 const Index = () => {
   return (
@@ -77,45 +78,39 @@ const Index = () => {
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              <PlanCard
-                title="📱 Plan Movistar 300"
-                description="Premium con máxima velocidad"
-                price="$300"
-                features={[
-                  "Internet 5G ilimitado",
-                  "Llamadas sin límite",
-                  "Roaming incluido",
-                  "Streaming premium"
-                ]}
-                variant="movistar"
-                socialIcons={<SocialIcons variant="movistar" size="sm" />}
+            <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
+              <MovistarPlanCard
+                planName="Plan Pro Ilimitado"
+                dataAmount=""
+                isUnlimited={true}
+                oldPrice="$579"
+                newPrice="$290"
+                colorScheme="purple"
+                hasAppsIlimitadas={true}
               />
               
-              <PlanCard
-                title="📱 Plan Movistar 250"
-                description="Ideal para uso intensivo"
-                price="$250"
-                features={[
-                  "Internet 4G+ ilimitado",
-                  "Llamadas y SMS ilimitados",
-                  "Hotspot compartido"
-                ]}
-                variant="movistar"
-                socialIcons={<SocialIcons variant="movistar" size="sm" />}
+              <MovistarPlanCard
+                planName="Plan Pro 35"
+                dataAmount="35 GB"
+                oldPrice="$449"
+                newPrice="$225"
+                colorScheme="blue-dark"
               />
               
-              <PlanCard
-                title="📱 Plan Movistar 180"
-                description="Perfecto para uso diario"
-                price="$180"
-                features={[
-                  "Internet 4G estándar",
-                  "Llamadas ilimitadas",
-                  "Redes sociales gratis"
-                ]}
-                variant="movistar"
-                socialIcons={<SocialIcons variant="movistar" size="sm" />}
+              <MovistarPlanCard
+                planName="Plan Pro 25" 
+                dataAmount="25 GB"
+                oldPrice="$349"
+                newPrice="$175"
+                colorScheme="blue-light"
+              />
+              
+              <MovistarPlanCard
+                planName="Plan Pro 18"
+                dataAmount="18 GB" 
+                oldPrice="$299"
+                newPrice="$150"
+                colorScheme="pink"
               />
             </div>
           </div>

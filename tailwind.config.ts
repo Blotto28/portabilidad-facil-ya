@@ -70,12 +70,20 @@ export default {
 				movistar: {
 					DEFAULT: 'hsl(var(--movistar-primary))',
 					foreground: 'hsl(var(--movistar-foreground))',
-					accent: 'hsl(var(--movistar-accent))'
+					accent: 'hsl(var(--movistar-accent))',
+					purple: 'hsl(var(--movistar-purple))',
+					'purple-dark': 'hsl(var(--movistar-purple-dark))',
+					'blue-dark': 'hsl(var(--movistar-blue-dark))',
+					'blue-light': 'hsl(var(--movistar-blue-light))',
+					pink: 'hsl(var(--movistar-pink))',
+					'pink-dark': 'hsl(var(--movistar-pink-dark))'
 				},
 				whatsapp: {
 					DEFAULT: 'hsl(var(--whatsapp))',
 					foreground: 'hsl(var(--whatsapp-foreground))'
-				}
+				},
+				'success-text': 'hsl(var(--success-text))',
+				'strike-red': 'hsl(var(--strike-red))'
 			},
 			backgroundImage: {
 				'gradient-bait': 'var(--gradient-bait)',

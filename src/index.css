@@ -45,8 +45,17 @@ All colors MUST be HSL.
     --movistar-foreground: 0 0% 100%;
     --movistar-accent: 203 100% 45%;
     
+    --movistar-purple: 270 91% 65%;
+    --movistar-purple-dark: 270 91% 25%;
+    --movistar-blue-dark: 220 91% 15%;
+    --movistar-blue-light: 200 91% 55%;
+    --movistar-pink: 330 81% 60%;
+    --movistar-pink-dark: 330 81% 35%;
+    
     --whatsapp: 142 70% 49%;
     --whatsapp-foreground: 0 0% 100%;
+    --success-text: 142 70% 35%;
+    --strike-red: 0 84% 60%;
     
     /* Gradients */
     --gradient-bait: linear-gradient(135deg, hsl(var(--bait-primary)), hsl(var(--bait-accent)));
