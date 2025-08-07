@@ -36,6 +36,30 @@ All colors MUST be HSL.
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
+    /* Custom brand colors for telecom landing */
+    --bait-primary: 48 100% 51%;
+    --bait-foreground: 0 0% 0%;
+    --bait-accent: 48 100% 45%;
+    
+    --movistar-primary: 203 100% 52%;
+    --movistar-foreground: 0 0% 100%;
+    --movistar-accent: 203 100% 45%;
+    
+    --whatsapp: 142 70% 49%;
+    --whatsapp-foreground: 0 0% 100%;
+    
+    /* Gradients */
+    --gradient-bait: linear-gradient(135deg, hsl(var(--bait-primary)), hsl(var(--bait-accent)));
+    --gradient-movistar: linear-gradient(135deg, hsl(var(--movistar-primary)), hsl(var(--movistar-accent)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--bait-primary)) 0%, hsl(var(--movistar-primary)) 100%);
+    
+    /* Shadows */
+    --shadow-card: 0 4px 20px rgba(0, 0, 0, 0.1);
+    --shadow-button: 0 2px 10px rgba(0, 0, 0, 0.15);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
     --radius: 0.5rem;
 
     --sidebar-background: 0 0% 98%;

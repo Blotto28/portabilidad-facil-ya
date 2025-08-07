@@ -61,7 +61,33 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				bait: {
+					DEFAULT: 'hsl(var(--bait-primary))',
+					foreground: 'hsl(var(--bait-foreground))',
+					accent: 'hsl(var(--bait-accent))'
+				},
+				movistar: {
+					DEFAULT: 'hsl(var(--movistar-primary))',
+					foreground: 'hsl(var(--movistar-foreground))',
+					accent: 'hsl(var(--movistar-accent))'
+				},
+				whatsapp: {
+					DEFAULT: 'hsl(var(--whatsapp))',
+					foreground: 'hsl(var(--whatsapp-foreground))'
 				}
+			},
+			backgroundImage: {
+				'gradient-bait': 'var(--gradient-bait)',
+				'gradient-movistar': 'var(--gradient-movistar)',
+				'gradient-hero': 'var(--gradient-hero)'
+			},
+			boxShadow: {
+				'card': 'var(--shadow-card)',
+				'button': 'var(--shadow-button)'
+			},
+			transitionProperty: {
+				'smooth': 'var(--transition-smooth)'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
