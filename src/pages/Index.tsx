@@ -3,6 +3,7 @@ import { PlanCard } from "@/components/PlanCard";
 import { SocialIcons } from "@/components/SocialIcons";
 import { MovistarPlanCard } from "@/components/MovistarPlanCard";
 import { BaitPlanCard } from "@/components/BaitPlanCard";
+import { MovistarPlanCardV2 } from "@/components/MovistarPlanCardV2";
 
 const Index = () => {
   return (
@@ -18,42 +19,54 @@ const Index = () => {
             {/* Title */}
             <div className="text-center mb-12">
               <h2 className="text-4xl md:text-5xl font-bold text-black">
-                Paquetes que te dan más
+                Promociones BAIT
               </h2>
             </div>
             
             {/* Plans Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
               <BaitPlanCard
+                title="Paquete Bait 50"
                 price="$50"
-                planName="Bait 50"
-                description="Disfruta 7 días con 3 GB"
-                duration="7 días"
-                dataAmount="3 GB"
+                features={[
+                  "Internet y redes sociales",
+                  "WhatsApp, Facebook, Messenger, Instagram, Snapchat, X"
+                ]}
+                ctaLabel="Contrata en WhatsApp"
+                ctaLink="https://wa.me/521000000000"
               />
               
               <BaitPlanCard
+                title="Paquete Bait 100"
                 price="$100"
-                planName="Portabilidad 100"
-                description="Disfruta 30 días con 9 GB"
-                duration="30 días"
-                dataAmount="9 GB"
+                features={[
+                  "Más GB para navegar",
+                  "WhatsApp, Facebook, Messenger, Instagram, Snapchat, X"
+                ]}
+                ctaLabel="Contrata en WhatsApp"
+                ctaLink="https://wa.me/521000000000"
               />
               
               <BaitPlanCard
+                title="Paquete Bait 200"
                 price="$200"
-                planName="Bait 200"
-                description="Disfruta 30 días con 15 GB"
-                duration="30 días"
-                dataAmount="15 GB"
+                features={[
+                  "Alta velocidad",
+                  "WhatsApp, Facebook, Messenger, Instagram, Snapchat, X"
+                ]}
+                ctaLabel="Contrata en WhatsApp"
+                ctaLink="https://wa.me/521000000000"
               />
               
               <BaitPlanCard
+                title="Paquete Bait 230"
                 price="$230"
-                planName="Bait 230"
-                description="Internet Ilimitado"
-                duration="30 días"
-                dataAmount="Ilimitado"
+                features={[
+                  "Velocidad máxima + hotspot",
+                  "WhatsApp, Facebook, Messenger, Instagram, Snapchat, X"
+                ]}
+                ctaLabel="Contrata en WhatsApp"
+                ctaLink="https://wa.me/521000000000"
               />
             </div>
           </div>
@@ -61,49 +74,64 @@ const Index = () => {
         
         {/* Movistar Section */}
         <div className="bg-movistar py-16 px-4">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl md:text-5xl font-bold text-movistar-foreground mb-4">
-                💙 Promociones Movistar - La mejor cobertura
+              <h2 className="text-4xl md:text-5xl font-bold text-white">
+                Promociones MOVISTAR
               </h2>
-              <p className="text-xl text-movistar-foreground opacity-90">
-                Planes con la mejor red y cobertura nacional. Redes sociales sin límite.
-              </p>
             </div>
             
-            <div className="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
-              <MovistarPlanCard
-                planName="Plan Pro Ilimitado"
-                dataAmount=""
-                isUnlimited={true}
-                oldPrice="$579"
-                newPrice="$290"
-                colorScheme="purple"
-                hasAppsIlimitadas={true}
+            <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6">
+              <MovistarPlanCardV2
+                title="Plan Pro 18"
+                price="$299 / $150 x2 meses"
+                features={[
+                  "18GB navegación",
+                  "Hotspot incluido",
+                  "Llamadas y SMS ilimitados",
+                  "WhatsApp, Facebook, Messenger, Instagram, Snapchat, X"
+                ]}
+                ctaLabel="Contrata en WhatsApp"
+                ctaLink="https://wa.me/521000000000"
               />
               
-              <MovistarPlanCard
-                planName="Plan Pro 35"
-                dataAmount="35 GB"
-                oldPrice="$449"
-                newPrice="$225"
-                colorScheme="blue-dark"
+              <MovistarPlanCardV2
+                title="Plan Pro 25"
+                price="$349 / $175 x2 meses"
+                features={[
+                  "25GB navegación",
+                  "Hotspot incluido", 
+                  "Llamadas y SMS ilimitados",
+                  "WhatsApp, Facebook, Messenger, Instagram, Snapchat, X"
+                ]}
+                ctaLabel="Contrata en WhatsApp"
+                ctaLink="https://wa.me/521000000000"
               />
               
-              <MovistarPlanCard
-                planName="Plan Pro 25" 
-                dataAmount="25 GB"
-                oldPrice="$349"
-                newPrice="$175"
-                colorScheme="blue-light"
+              <MovistarPlanCardV2
+                title="Plan Pro 35"
+                price="$449 / $225 x2 meses"
+                features={[
+                  "35GB navegación",
+                  "Hotspot incluido",
+                  "Llamadas y SMS ilimitados",
+                  "WhatsApp, Facebook, Messenger, Instagram, Snapchat, X"
+                ]}
+                ctaLabel="Contrata en WhatsApp"
+                ctaLink="https://wa.me/521000000000"
               />
               
-              <MovistarPlanCard
-                planName="Plan Pro 18"
-                dataAmount="18 GB" 
-                oldPrice="$299"
-                newPrice="$150"
-                colorScheme="pink"
+              <MovistarPlanCardV2
+                title="Plan Pro Ilimitado"
+                price="$579 / $290 x2 meses"
+                features={[
+                  "Internet ilimitado (FUP)",
+                  "Hotspot",
+                  "Apps ilimitadas",
+                  "WhatsApp, Facebook, Messenger, Instagram, Snapchat, X"
+                ]}
+                ctaLabel="Contrata en WhatsApp"
+                ctaLink="https://wa.me/521000000000"
               />
             </div>
           </div>
